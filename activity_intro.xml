@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:padding="20dp"
+    tools:context=".IntroActivity">
+
+    <!-- Breathing Animation Image -->
+    <ImageView
+        android:id="@+id/breathingImage"
+        android:layout_width="221dp"
+        android:layout_height="227dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/breathing_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.252"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <!-- Deep Breath Text (Now Fades In & Out) -->
+    <TextView
+        android:id="@+id/deepBreathText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="1"
+        android:fontFamily="@font/poppins_regular"
+        android:paddingTop="20dp"
+        android:text="Take a Deep Breath..."
+        android:textColor="@color/textRelaxing"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/breathingImage" />
+
+    <!-- Skip Button (Rounded & Gradient) -->
+    <Button
+        android:id="@+id/skipButton"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_button"
+        android:fontFamily="@font/comfortaa_regular"
+        android:text="Skip"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/deepBreathText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

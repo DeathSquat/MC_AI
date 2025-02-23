@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/soft_blue"
+    tools:context=".BubbleGameActivity">
+
+    <!-- Game Container for rendering the game -->
+    <FrameLayout
+        android:id="@+id/game_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Score Display (More Visible & Centered) -->
+    <TextView
+        android:id="@+id/scoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="20dp"
+        android:padding="16dp"
+        android:text="Score: 0"
+        android:textColor="#0000FF"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:shadowColor="#000000"
+        android:shadowRadius="4"
+        android:elevation="5dp" />
+
+    <!-- Timer Display (Below Score) -->
+    <TextView
+        android:id="@+id/timerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="80dp"
+        android:padding="16dp"
+        android:text="Time Left: 60s"
+        android:textColor="#FF0000"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <!-- Exit Button -->
+    <Button
+        android:id="@+id/exit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exit Game"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/rounded_button"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="20dp" />
+
+</FrameLayout>

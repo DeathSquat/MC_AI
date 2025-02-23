@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#D5E57BA1"> <!-- Light pink background -->
+
+    <!-- Welcome Text -->
+    <TextView
+        android:id="@+id/deepBreathText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome To Mind Cure AI"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#FF0000"
+        android:layout_marginTop="50dp" />
+
+    <!-- Breathing Animation Image -->
+    <ImageView
+        android:id="@+id/breathingImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/breathing_image"
+        android:layout_marginTop="20dp" />
+
+    <!-- Subtitle -->
+    <TextView
+        android:id="@+id/selfHealthText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Your Smart Health Assistant"
+        android:textColor="#0077CC"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Let's Chat Button -->
+    <Button
+        android:id="@+id/chatButton"
+        android:layout_width="235dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FFA500"
+        android:text="🫂 Let's Chat 🫂"
+        android:textColor="#FFFFFF" />
+
+    <!-- Game Button -->
+    <Button
+        android:id="@+id/gameButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#36C5B9"
+        android:text="🎮 Time for Some Games 🎮"
+        android:textColor="#FFFFFF" />
+
+    <!-- SOS Button -->
+    <Button
+        android:id="@+id/sosButton"
+        android:layout_width="235dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#D32F2F"
+        android:text="🚨 SOS 🚨"
+        android:textColor="#FFFFFF" />
+
+    <!-- Book Session Button -->
+    <Button
+        android:id="@+id/bookSessionButton"
+        android:layout_width="235dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#1976D2"
+        android:text="👨‍⚕️ Book Session 👩‍⚕️"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>
